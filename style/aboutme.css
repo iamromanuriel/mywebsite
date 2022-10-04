@@ -1,0 +1,140 @@
+/*Start space*/
+body{
+    scroll-behavior: smooth;
+}
+.start{
+    background: linear-gradient(to right, #e2effc, #775de2);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.picture{
+    height: 400px;
+    width: 400px;
+    background: white;
+    border-radius: 50%;
+    margin: 5%;
+    text-align: center;
+    padding: 5%;
+    transition: .5s;
+}
+.picture:hover{
+    background: #000000;
+    color: #e2effc;
+}
+.picture > h1{
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+}
+.picture > h1 > span{
+    font-size: 2rem;
+    color: #775de2;
+    
+}
+.picture > h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    margin: 0.8rem;
+}
+/*About me space*/
+.aboutme{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+.container_about{
+    background-color: #000000;
+    border-radius: 15px;
+    width: 75%;
+}
+
+.controls_image{
+    display: flex;
+}
+.controls_image > .control{
+    height: 12px;
+    width: 12px;
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+
+.control.one{
+    background: red;
+}
+.control.two{
+    background: yellow;
+}
+.control.three{
+    background: rgb(46, 46, 46);
+}
+
+.container_about >h2{
+    color: #d1faf4;
+    text-align: center;
+    margin: 0.5%;
+}
+
+.context_text_about{
+    padding: 5%;
+    
+}
+.context_text_about > *{
+    color: #d1faf4;
+}
+.context_text_about > h5{
+    font-size: 2rem;
+}
+
+.parts{
+    display: flex;
+    justify-content: end
+}
+
+.parts > .one{
+    width: 40%;
+    margin: 1%;
+    border-style: solid;
+    border-radius: 10px;
+}
+.parts > .one > p{
+    color: white;
+    margin: 5%;
+    font-size: 1.2rem;
+}
+.parts> .two > img{
+    width: 50%;
+}
+
+@media screen and (max-width: 800px){
+    .picture{
+        height: 200px;
+        width: 200px;
+        margin: 15%;
+    }
+
+    .picture > h1{
+        font-size: 2rem;
+    }
+    .picture > h1 > span{
+        font-size: 1.5rem;
+    }
+    .picture > h2{
+        font-size: 1.2rem;
+    }
+    /*About me space*/
+    .container_about{
+        width: 95%;
+    }
+    .context_text_about > h5{
+        font-size: 1.5rem;
+    }
+    .parts{
+        display: block;
+    }
+    .parts > .one{
+        width: auto;
+    }
+    
+}

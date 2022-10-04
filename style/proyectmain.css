@@ -1,0 +1,32 @@
+.mainproyetc{
+    margin: 5%;
+}
+.image > img{
+    width: 75%;
+}
+.contextproyetc{
+    display: block;
+    justify-content: center;
+}
+
+.description_proyect{
+    background: #000;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 15px;
+}
+.description_proyect > *{
+    color: #fff;
+}
+.description_proyect > h3{
+    font-size: 1.5rem;
+}
+.proyect_elements{
+    display: flex;
+    justify-content: space-between;
+    color: #d1faf4;
+    margin: 1.5%;
+}
+.proyect_elements > p {
+    font-size: 1.2rem;
+}

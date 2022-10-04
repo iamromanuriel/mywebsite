@@ -1,0 +1,32 @@
+footer{
+    background: black;
+    margin-top: 5%;
+}
+footer > *{
+    color: white;
+    padding: 0.5rem;
+}
+.container_message > h3{
+    margin: 10px;
+    text-align: center;
+}
+.container_contant{
+    display: flex;
+    border-style: solid;
+    justify-content: space-around
+}
+.container_contant > h5{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.icon_contact{
+    width: 2rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 800px){
+    .container_contant{
+        display: block;
+    }
+}

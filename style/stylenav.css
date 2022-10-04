@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+nav {
+    background: #000;
+    height: 80px;
+    position: relative;
+    box-shadow: 0 1rem 1rem rgb(0,0,0,0.2);
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    line-height: 80px;
+    z-index: 100;
+}
+
+
+.links .link {
+    display: inline-block;
+}
+
+.links .link a {
+    text-decoration: none;
+    color: #d1faf4;
+    font-size: 15px;
+    margin: 0 25px;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+link .home{
+    border-color: #d1faf4;
+}
+
+.links .link a:hover {
+    color: #487abb;
+}
+
+.toggle {
+    color: #d1faf4;
+    margin-right: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 800px){
+    .toggle {
+        display: inline-block;
+    }
+
+    .links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 80px);
+        width: 100%;
+        z-index: -1;
+        top: -100vh;
+        transition: .5s;
+        z-index: 3;
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .links .link:hover {
+        background: #000000;
+    }
+    .container-logo > img{
+        height: 3rem;
+    }
+    
+}
